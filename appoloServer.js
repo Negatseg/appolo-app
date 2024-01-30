@@ -36,14 +36,14 @@ const authenticate = require('./middleware/authenticate');
 
 // ...
 
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  context: ({ req }) => {
-    // Pass the request and authentication information to the context
-    const user = authenticate(req);
-    return { user };
-  },
-});
+// const server = new ApolloServer({
+//   typeDefs,
+//   resolvers,
+//   context: ({ req }) => {
+//     // Pass the request and authentication information to the context
+//     const user = authenticate(req);
+//     return { user };
+//   },
+//});
 
 // ...

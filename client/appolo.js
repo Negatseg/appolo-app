@@ -1,31 +1,33 @@
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3000/graphql', // Your server endpoint
+  uri: 'http://localhost:4000/graphql', // Your server endpoint
   cache: new InMemoryCache(),
 });
 
 // Wrap your main component with ApolloProvider
 const App = () => (
-//   <ApolloProvider client={client}>
-    {/* Your main component */}
+// <ApolloProvider client={client}>
+    //{/* Your main component */}
     ReactDOM.render(
   <ApolloProvider client={client}>
     <App />
   </ApolloProvider>,
   document.getElementById('root')
-);
-  {/* </ApolloProvider>
-); */}
+));
+  //{/* </ApolloProvider>
 
 // ...
 
 
 // src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
-import App from './App';
+//import React from 'react';
+//import ReactDOM from 'react-dom';
+//import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+//import App from './App';
 
 // Create Apollo Client instance
 // const client = new ApolloClient({

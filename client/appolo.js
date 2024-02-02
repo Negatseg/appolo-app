@@ -1,7 +1,7 @@
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql', // Your server endpoint
+  uri: 'http://localhost:3000/graphql', // Your server endpoint
   cache: new InMemoryCache(),
 });
 
@@ -28,18 +28,18 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import App from './App';
 
 // Create Apollo Client instance
-const client = new ApolloClient({
-  uri: 'http://localhost:4000', // Replace with your server URL
-  cache: new InMemoryCache(),
-});
+// const client = new ApolloClient({
+//   uri: 'http://localhost:4000', // Replace with your server URL
+//   cache: new InMemoryCache(),
+// });
 
 // Wrap your app with ApolloProvider
-ReactDOM.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <ApolloProvider client={client}>
+//     <App />
+//   </ApolloProvider>,
+//   document.getElementById('root')
+// );
 
 // src/App.js
 import React, { useState } from 'react';

@@ -17,7 +17,7 @@
 
 // 
 const { gql } = require('apollo-server-express');
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 const express = require('express');
 const app = express();
 const { ApolloServer } = require('@apollo/server');
